@@ -1,0 +1,128 @@
+.header {
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topBar {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcon {
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.socialIcon:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.mainHeader {
+    padding: 2rem 0;
+}
+
+.mainHeader .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.headerContent {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.95;
+}
+
+.description {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.heroSection {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        display: none;
+    }
+
+    .mainHeader .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .heroTitle {
+        font-size: 1.75rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,172 @@
+.impactSection {
+    margin: 3rem 0;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.impactHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.headerIcon {
+    font-size: 3rem;
+    color: #c12de0;
+    margin-bottom: 1rem;
+}
+
+.impactTitle {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.impactDescription {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.statisticsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.statCard {
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-8px);
+}
+
+.statMetric {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.statDescription {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.chartContainer {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.chartTitle {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.benefitCard {
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #c12de0;
+    transition: all 0.3s ease;
+}
+
+.benefitCard:hover {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(8px);
+}
+
+.benefitIcon {
+    font-size: 2.5rem;
+    color: #c12de0;
+    margin-bottom: 1rem;
+}
+
+.benefitTitle {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.benefitText {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.callToAction {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(193, 45, 224, 0.1) 0%, rgba(120, 23, 182, 0.1) 100%);
+    border-radius: 12px;
+}
+
+.ctaTitle {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ctaText {
+    font-size: 1.125rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .impactSection {
+        padding: 2rem 1rem;
+    }
+
+    .impactTitle {
+        font-size: 1.75rem;
+    }
+
+    .statisticsGrid,
+    .benefitsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .chartContainer {
+        padding: 1rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.5rem;
+    }
+}

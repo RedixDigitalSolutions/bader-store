@@ -1,0 +1,248 @@
+.companySection {
+    padding: 5rem 0;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sectionSubtitle {
+    font-size: 1.5rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.statCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.statCard:hover {
+    border-color: #c12de0;
+    box-shadow: 0 10px 30px rgba(193, 45, 224, 0.2);
+}
+
+.statIcon {
+    font-size: 3rem;
+    color: #c12de0;
+    margin-bottom: 1rem;
+}
+
+.statValue {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.descriptionBox {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    border-left: 5px solid #c12de0;
+}
+
+.descriptionTitle {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.descriptionText {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 1.5rem;
+}
+
+.descriptionText strong {
+    color: #c12de0;
+    font-weight: 600;
+}
+
+.servicesWrapper {
+    margin-bottom: 4rem;
+}
+
+.servicesTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.serviceCard {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid #c12de0;
+}
+
+.serviceIcon {
+    font-size: 3rem;
+    color: #c12de0;
+    margin-bottom: 1.5rem;
+}
+
+.serviceTitle {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.serviceDescription {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.contactSection {
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    padding: 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contactTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contactSubtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+.contactMethods {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.contactButton {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: #c12de0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+}
+
+.contactButton.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.socialLink {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .descriptionBox {
+        padding: 2rem;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactSection {
+        padding: 2rem;
+    }
+
+    .contactMethods {
+        flex-direction: column;
+    }
+
+    .contactButton {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,193 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+.logoText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navLink {
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    transition: width 0.3s ease;
+}
+
+.navLink:hover {
+    color: #c12de0;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.contactButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.phoneButton,
+.whatsappButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.phoneButton {
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    color: white;
+    border: none;
+}
+
+.whatsappButton {
+    background: #25D366;
+    color: white;
+    border: none;
+}
+
+.mobileMenuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #334155;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobileMenu {
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.mobileNavLinks {
+    list-style: none;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+.mobileNavLinks li {
+    margin: 0.75rem 0;
+}
+
+.mobileNavLinks a {
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.mobileContactButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.mobilePhoneButton,
+.mobileWhatsappButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.mobilePhoneButton {
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+}
+
+.mobileWhatsappButton {
+    background: #25D366;
+}
+
+@media (max-width: 1024px) {
+
+    .navLinks,
+    .contactButtons {
+        display: none;
+    }
+
+    .mobileMenuButton {
+        display: block;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}

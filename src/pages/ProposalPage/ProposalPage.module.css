@@ -1,0 +1,220 @@
+.proposalPage {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.mainContent {
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.packagesSection {
+    padding: 5rem 0;
+    background: white;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.sectionSubtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 3rem;
+}
+
+.packagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.servicesSection {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.serviceColumn {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.serviceColumn:hover {
+    border-color: #c12de0;
+    box-shadow: 0 8px 16px rgba(193, 45, 224, 0.2);
+}
+
+.columnTitle {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.comparisonSection {
+    padding: 5rem 0;
+    background: white;
+}
+
+.marketingSection {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.videoSection {
+    padding: 5rem 0;
+    background: white;
+}
+
+.finalCta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #c12de0 0%, #7817b6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.finalCta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ctaBox {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.ctaTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.ctaText {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.primaryButton {
+    background: white;
+    color: #7817b6;
+}
+
+.primaryButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.secondaryButton {
+    background: transparent;
+    color: white;
+}
+
+.secondaryButton:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+.footer {
+    background: linear-gradient(135deg, #f700ffa4 0%, #64007c 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+    .packagesGrid,
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTitle,
+    .ctaTitle {
+        font-size: 1.75rem;
+    }
+
+    .ctaText {
+        font-size: 1rem;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ctaBox {
+        padding: 1rem;
+    }
+}
