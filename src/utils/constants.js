@@ -29,10 +29,10 @@ export const SOCIAL_PLATFORMS = [
 ];
 
 export const SAMPLE_VIDEOS = [
-    { name: 'Dark-Blue-Purse.mov', title: 'Sac Bleu Marine Premium' },
-    { name: 'pink-purse.mov', title: 'Collection Rose Élégante' },
-    { name: 'Timeline-1.mov', title: 'Animation Timeline' },
-    { name: 'white-purse.mov', title: 'Sac Blanc Luxueux' }
+    { name: 'Dark-Blue-Purse.mp4', title: 'Sac Bleu Marine Premium' },
+    { name: 'Pink-Purse.mp4', title: 'Collection Rose Élégante' },
+    { name: 'Timeline-1.mp4', title: 'Animation Timeline' },
+    { name: 'White-Purse.mp4', title: 'Sac Blanc Luxueux' }
 ];
 
 export const NAV_LINKS = [
