@@ -95,7 +95,7 @@ export const packages = {
             {
                 title: 'Site Web Statique Personnalisé',
                 items: [
-                    'Développement gratuit (design luxueux)',
+                    'Développement du site web (design luxueux) 250 DT',
                     'Domaine bader-tn.store: 30 DT (unique)',
                     'Hébergement: 70 DT/mois',
                     '( 1 ) Mises à jour mensuelles gratuites',
@@ -140,6 +140,11 @@ export const comparisonData = [
         rosa: 'Inclus (gratuit)'
     },
     {
+        feature: 'developement site web',
+        bader: 'Non inclus',
+        rosa: '250 DT (premium)'
+    },
+    {
         feature: 'Domaine personnalisé',
         bader: '—',
         rosa: '30 DT (unique)'
@@ -169,11 +174,7 @@ export const comparisonData = [
         bader: 'Instagram, Facebook',
         rosa: 'Instagram, Facebook, TikTok'
     },
-    {
-        feature: 'Modèles gratuits',
-        bader: 'Inclus',
-        rosa: 'Inclus (premium)'
-    }
+
 ];
 
 export const marketingImpact = {
